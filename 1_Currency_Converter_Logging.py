@@ -48,4 +48,4 @@ logger.debug("Current rates: {exchange_rates}".format(exchange_rates=exchange_ra
 currency = convert("EUR", "USD", 45)
 print(currency)
          
-  
+     
