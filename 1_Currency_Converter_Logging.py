@@ -47,5 +47,5 @@ def convert(from_country, to_country, amount):
 logger.debug("Current rates: {exchange_rates}".format(exchange_rates=exchange_rates))        
 currency = convert("EUR", "USD", 45)
 print(currency)
-
+  
   
