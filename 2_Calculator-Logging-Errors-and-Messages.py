@@ -5,7 +5,8 @@ logger = logging.getLogger(__name__)
 print(logger)
 stream_handler = logging.StreamHandler(sys.stdout)
 logger.addHandler(stream_handler)
-        
+logger.setLevel(logging.DEBUG)
+
 def division():
   logger.debug("Starting Division! ")
   try:
