@@ -13,6 +13,7 @@ INFO:__main__:Converting from USD to USD: 52.217806271938734
 
 ### 2. Logging-Errors-and-Messages
 <Logger __main__ (WARNING)>
+
 Dividend: 6
 Divisor: 0
 Attempting to divide by 0!
