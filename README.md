@@ -16,6 +16,7 @@ INFO:__main__:Converting from USD to USD: 52.217806271938734
 
 Dividend: 6
 Divisor: 0
+
 Attempting to divide by 0!
 The result value is None!
 
