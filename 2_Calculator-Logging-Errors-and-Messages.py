@@ -5,6 +5,7 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)         
 file_handler = logging.FileHandler("formatted.log")   
 stream_handler = logging.StreamHandler(sys.stdout)
+logging.basicConfig(filename='basic_config.log', level=logging.DEBUG, format='[%(asctime)s] - %(levelname)s - %(message)s')
 
 formatter1=logging.Formatter("[%(asctime)s] {%(levelname)s} %(name)s: #%(lineno)d - %(message)s" )
 file_handler.setFormatter(formatter1)
