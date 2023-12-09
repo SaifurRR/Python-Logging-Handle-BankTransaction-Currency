@@ -8,7 +8,7 @@ stream_handler.setFormatter(formatter)
 logger.addHandler(stream_handler)
 logger.setLevel(logging.DEBUG)
 
-exchange_rates = {
+exchange_rates = { 
   "USD": 1.0,
   "EUR": 0.861775,
   "GBP": 0.726763,
