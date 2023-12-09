@@ -2,10 +2,18 @@ import logging
 import sys
 
 logger = logging.getLogger(__name__)
-print(logger)
-stream_handler = logging.StreamHandler(sys.stdout)
-logger.addHandler(stream_handler)
 logger.setLevel(logging.DEBUG)
+file_handler = logging.FileHandler("formatted.log")
+stream_handler = logging.StreamHandler(sys.stdout)
+
+formatter1=logging.Formatter("[%(asctime)s] {%(levelname)s} %(name)s: #%(lineno)d - %(message)s" )
+file_handler.setFormatter(formatter1)
+
+formatter2=logging.Formatter("[%(asctime)s] {%(levelname)s} - %(message)s")
+stream_handler.setFormatter(formatter2)
+
+logger.addHandler(file_handler)
+logger.addHandler(stream_handler)
 
 def division():
   logger.debug("Starting Division! ")
