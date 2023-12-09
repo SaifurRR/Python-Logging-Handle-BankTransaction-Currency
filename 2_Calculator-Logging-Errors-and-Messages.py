@@ -3,7 +3,7 @@ import sys
      
 logger = logging.getLogger(__name__)         
 logger.setLevel(logging.DEBUG)     
-file_handler = logging.FileHandler("formatted.log")
+file_handler = logging.FileHandler("formatted.log")   
 stream_handler = logging.StreamHandler(sys.stdout)
 
 formatter1=logging.Formatter("[%(asctime)s] {%(levelname)s} %(name)s: #%(lineno)d - %(message)s" )
