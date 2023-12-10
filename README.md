@@ -21,6 +21,6 @@ Attempting to divide by 0!
 The result value is None!
 
 
-### 3. ATM Logging
+### Project: ATM Logging
 
 The goal of this project is to modify the existing BankAccount methods to utilize the logging module instead of print statements. Using the logging module over print statements will help make the project code more readable and maintainable after these modifications are made.
